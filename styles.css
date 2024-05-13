@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(252, 248, 239);
+}
+
+
+a, .btn {
+    transition: all 300ms ease;
+
+}
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 20px;
+    justify-items: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 70px;
+    justify-content: left;
+}
+
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child{
+transform: rotate(45deg) translate(5px, 3px);
+}
+
+.hamburger-icon.open span:nth-child(2){
+transform: rotate(-45deg) translate(5px, -3px);
+}
+
+.hamburger-icon.open span:last-child{
+    opacity: 0;
+}
+
+section{
+    height: 100vh;
+}
+
+.smiley{
+    margin: 0;
+    padding-top: 5vh;
+    padding-left: 230px;
+    padding-bottom: 0px;
+    width: 80px;
+    height: 80px;
+}
+
+.smiley:hover{
+    animation: Shake 0.5s linear infinite;
+}
+
+@keyframes Shake { 
+    0% { 
+        transform: rotate(5deg); 
+    } 
+  
+    25% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    50% { 
+        transform: rotate(5deg); 
+    } 
+  
+    75% { 
+        transform: rotate(-6deg); 
+    } 
+  
+    100% { 
+        transform: rotate(5deg); 
+    } 
+}
+
+h1{
+    padding-top: 0;
+    text-align: center;
+    font-size: 100px;
+    height: 120px;
+    font-weight: 300;
+    z-index: 1;
+}
+
+.caption{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.underline{
+    padding-left: 50vw;
+    width: 400px;
+    padding-bottom: 20px;
+    z-index: auto;
+}
+
+.img-container{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img-container img{
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+}
+
+.overlay-text{
+    position: absolute;
+    font-weight: 600;
+}
+
+.overlay-text:hover{
+    transform: scale(1.5);
+}
+
+.about-me{
+    margin: 10px;
+    display: flex;
+}
+
+.profile img{
+    width: 400px;
+    height: 600px;
+    padding-left: 200px;
+}
+
+.text{
+    width: 520px;
+    font-size: 18px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+
+.title{
+    line-height: 0.5;
+    padding-bottom: 20px;
+}
+
+.title h2{
+    padding-left: 100px;
+    font-size: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.title img{
+    width: 45px;
+    height: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.decor-1{
+    padding-left: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.decor-2{
+    padding-left: 350px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn{
+    background-color: #CFDD91;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px 30px 10px 30px;
+    width: fit-content;
+}
+
+.btn:hover{
+    background-color: #FFD53F;
+}
+
+.space-btn{
+    padding-top: 20px;
+}
