@@ -188,7 +188,11 @@ h1{
 }
 
 .caption span:hover{
-    background-color: #CFDD91;
+    background-color: #aec646;
+}
+
+span{
+    background-color:#CFDD91;
 }
 
 .underline{
@@ -253,7 +257,7 @@ h1{
 }
 
 .ux-under{
-    padding: 0px 0px 50px 22vw;
+    padding: 0px 0px 0px 22vw;
     width: 500px;
     height: 30px;
   }
@@ -335,7 +339,15 @@ h1{
 
 .container-1{
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 100px 0px 100px;
+}
+
+.container-1 .user{
+    padding-left: 100px;
+    width: 1050px;
+    text-align: center;
 }
 
 .container-2{
@@ -349,11 +361,9 @@ h1{
     margin: 100px;
 }
 
-.container-2 p, ul{
-    font-size: 18px;
-}
 
 .details-container {
+    min-height: 400px;
     margin-top: 2rem;
     padding: 1.5rem;
     flex: 1;
@@ -371,14 +381,6 @@ h1{
 
 .banner h1{
     padding: 5px 0px 20px 0px;
-}
-
-.grid{
-    max-width: 80vw;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: masonry;
 }
 
 .scroll-container {
@@ -486,8 +488,12 @@ h1{
     );
   }
 
+  .project p{
+    padding-top: 20px;
+  }
+
   .center{
-    padding-top: 40px;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
