@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andaiye Gibson</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><img src="assets/Asset 1.png" alt="Andaiye's logo"></a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="projects.html">projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo"><img src="assets/Asset 1.png" alt="Andaiye's logo"></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+                <li><a href="index.html#about" onclick="toggleMenu()">about me</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">projects</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">contact</a></li>
+        </div>
+        </div>
+    </nav>
+
+    <div class="banner">
+        <h1>GraveHunter</h1>
+        <p>a retro Halloween maze game</p>
+    </div>
+    <section class="project">
+
+        <h2>Overview</h2>
+        GraveHunter is a retro, Halloween themed action maze game. The game follows the main character who wakes suddenly in a maze-like graveyard that is guarded by the Grim Reaper and his vengeful ghosts. In order to escape, the main character must release all the souls stuck in the graveyard before the evil ghosts catch him.</p>
+        <div class="container-1">
+            <div class="details-container">
+                <h3>Roles</h3>
+            <p> Individual project<br> Coder and Game Developer</p>
+            </div>
+            <div class="details-container">
+                <h3>Duration</h3>
+            <p>5 months<br>Spring 2023</p>
+            </div>
+            <div class="details-container">
+                <h3>Tools Used</h3>
+            <p>Unity</p>
+            </div>
+            </div>
+    </section>
+
+    <section class="project">
+        <h2>Controls, Features, and UI elements</h2>
+        <div class="container-1">
+            <div>
+                <p>Primarily keyboard input</p>
+                <ul>
+                    <li>Up, Down, Left and Right arrow keys to move
+            around the map</li>
+                    <li>Mostly if statements for coding</li>
+                    <li>Narrative Storyline that uses an array for typewriter effect</li>
+                    <li>Waypoints</li>
+                    <li>Colliders</li>
+                    <li>Non-Diegetic UI (HUD) which include the lives tracker and point system</li>
+            </ul>
+            </div>
+            <div>
+                <img src="assets/GH_1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <h2>Challenges</h2>
+        <div class="container-1">
+            <div>
+                <img src="assets/GH_2.png" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li>Initial concept ideation: creating a compelling storyline, player, emenies and obstacles within an interesting setting</li>
+                    <li>Figuring out enemy functions and whether they should chase or patrol, resulting in me doing a lot of research on AI and pathfinding.</li>
+                    <li>Implementing user feedback to make instructions more clear and adding context clues, as well as increasing user feedback</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <h2>Future Iterations</h2>
+        <div class="container-1">
+            <div>
+        <ul>
+            <li>Implementing a larger map that unlocks new areas as levels progress</li>
+            <li>Adding more levels with different enemies with increasingly effective health damages</li>
+            <li>Including side quests so that there are more goals to complete while still avoiding the enemies</li>
+            <li>Executing smoother transitions and adding more game interactions</li>
+    </ul>
+            </div>
+            <div>
+                <img src="assets/GH_3.png" alt="">
+            </div>
+        </div>
+
+        <div class="space-btn"><a class="btn" href="https://simmer.io/@agibson/gravehunter" target="_blank">Demo the game</a></div>
+    </section>
+    <footer>
+        <div>
+            <a href="www.linkedin.com/in/andaiye-gibson/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/agibs317/" target="_blank">GitHub</a>
+        </div>
+        <p>andaiye.business@gmail.com</p>
+        <p>Copyright &#169; 2024 Andaiye Gibson. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
